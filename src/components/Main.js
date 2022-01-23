@@ -8,7 +8,7 @@ function Main() {
       key={id}
       img={coverImg}
       rating={stats.rating}
-      reviewCount={6}
+      reviewCount={stats.reviewCount}
       country={country}
       title={title}
       price={price}

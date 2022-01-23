@@ -1,6 +1,6 @@
 // import star from "";
 
-function Card({ img, rating, reviewCount, country, title, price, openSpots, location }) {
+function Card( { data : {openSpots, location, coverImg, stats: {rating, reviewCount}, country}, title, price}) {
   let badgeText;
   if (openSpots === 0) {
     badgeText = "SOLD OUT";
@@ -10,7 +10,7 @@ function Card({ img, rating, reviewCount, country, title, price, openSpots, loca
   return (
     <div className="card">
       {badgeText && <div className="card-badge">{badgeText}</div>}
-      <img className="card-image" src={`../img/${img}`} alt="img" />
+      <img className="card-image" src={`../img/${coverImg}`} alt="img" />
       <div className="stars">
         <img className="star" src="../img/star.svg" alt="star" />
         <p>

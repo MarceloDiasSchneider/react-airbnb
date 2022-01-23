@@ -3,17 +3,10 @@ import Card from "./Card";
 import data from "../data";
 
 function Main() {
-  const cards = data.map(({ id, coverImg, stats, country, title, price, openSpots, location }) => (
+  const cards = data.map((data, key) => (
     <Card
-      key={id}
-      img={coverImg}
-      rating={stats.rating}
-      reviewCount={stats.reviewCount}
-      country={country}
-      title={title}
-      price={price}
-      openSpots={openSpots}
-      location={location}
+      key={key}
+      data={data}
     />
   ));
   return (

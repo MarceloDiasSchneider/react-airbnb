@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 nav {
@@ -34,4 +34,52 @@ section {
 
 .hero-text {
   margin-top: 0;
+}
+
+.cards-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.card {
+  margin: 10px;
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image {
+  margin: 0;
+}
+
+.card-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.stars {
+  margin-top: 0;
+  display: flex;
+}
+
+.star {
+  margin: 5px;
+}
+
+.star > * {
+  margin: 0;
+}
+
+.span-mute {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.span-bold {
+  font-weight: bold;
+}
+
+p {
+  margin: 0;
 }
